@@ -1,0 +1,231 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Oct 12, 2018 10:01:37 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="asr_data.entity.AllData" table="ALL_DATA" schema="PAUL" optimistic-lock="version">
+        <id name="instanceNum" type="int">
+            <column name="INSTANCE_NUM" precision="9" scale="0" />
+            <generator class="assigned" />
+        </id>
+        <property name="assetSupportType" type="string">
+            <column name="ASSET_SUPPORT_TYPE" length="26" />
+        </property>
+        <property name="assetCount" type="java.lang.Boolean">
+            <column name="ASSET_COUNT" precision="1" scale="0" />
+        </property>
+        <property name="serialNum" type="string">
+            <column name="SERIAL_NUM" length="10" />
+        </property>
+        <property name="connectionStatus" type="string">
+            <column name="CONNECTION_STATUS" length="26" />
+        </property>
+        <property name="csi" type="java.lang.Integer">
+            <column name="CSI" precision="8" scale="0" />
+        </property>
+        <property name="globalPartyNum" type="java.lang.Integer">
+            <column name="GLOBAL_PARTY_NUM" precision="8" scale="0" />
+        </property>
+        <property name="globalPartyName" type="string">
+            <column name="GLOBAL_PARTY_NAME" length="37" />
+        </property>
+        <property name="accountName" type="string">
+            <column name="ACCOUNT_NAME" length="31" />
+        </property>
+        <property name="topAccount" type="string">
+            <column name="TOP_ACCOUNT" length="3" />
+        </property>
+        <property name="accountNum" type="string">
+            <column name="ACCOUNT_NUM" length="9" />
+        </property>
+        <property name="accountAlternateName" type="string">
+            <column name="ACCOUNT_ALTERNATE_NAME" length="31" />
+        </property>
+        <property name="highestContractEndDate" type="string">
+            <column name="HIGHEST_CONTRACT_END_DATE" length="10" />
+        </property>
+        <property name="highestContractNumber" type="string">
+            <column name="HIGHEST_CONTRACT_NUMBER" length="38" />
+        </property>
+        <property name="entitlementStatus" type="string">
+            <column name="ENTITLEMENT_STATUS" />
+        </property>
+        <property name="highestContractGracePeriod" type="string">
+            <column name="HIGHEST_CONTRACT_GRACE_PERIOD" length="26" />
+        </property>
+        <property name="assetStartDate" type="string">
+            <column name="ASSET_START_DATE" length="10" />
+        </property>
+        <property name="assetHlos" type="string">
+            <column name="ASSET_HLOS" length="3" />
+        </property>
+        <property name="hwAssetDerivedStatus" type="string">
+            <column name="HW_ASSET_DERIVED_STATUS" length="7" />
+        </property>
+        <property name="hwDescription" type="string">
+            <column name="HW_DESCRIPTION" length="65" />
+        </property>
+        <property name="asrActiveFlag" type="string">
+            <column name="ASR_ACTIVE_FLAG" length="1" />
+        </property>
+        <property name="hwHostname" type="string">
+            <column name="HW_HOSTNAME" length="26" />
+        </property>
+        <property name="asrAssetFirstActivationDat" type="string">
+            <column name="ASR_ASSET_FIRST_ACTIVATION_DAT" length="26" />
+        </property>
+        <property name="asrDeactivationDate" type="string">
+            <column name="ASR_DEACTIVATION_DATE" />
+        </property>
+        <property name="asrStatus" type="string">
+            <column name="ASR_STATUS" length="11" />
+        </property>
+        <property name="asrTechnicalContactEmail" type="string">
+            <column name="ASR_TECHNICAL_CONTACT_EMAIL" length="21" />
+        </property>
+        <property name="asrDistributionListEmail" type="string">
+            <column name="ASR_DISTRIBUTION_LIST_EMAIL" length="19" />
+        </property>
+        <property name="asrLastHeartBeatRecDate" type="string">
+            <column name="ASR_LAST_HEART_BEAT_REC_DATE" length="10" />
+        </property>
+        <property name="asrHostname" type="string">
+            <column name="ASR_HOSTNAME" length="45" />
+        </property>
+        <property name="hwAddressLine1" type="string">
+            <column name="HW_ADDRESS_LINE_1" length="29" />
+        </property>
+        <property name="hwAddressLine2" type="string">
+            <column name="HW_ADDRESS_LINE_2" length="31" />
+        </property>
+        <property name="hwCity" type="string">
+            <column name="HW_CITY" length="15" />
+        </property>
+        <property name="hwCounty" type="string">
+            <column name="HW_COUNTY" length="12" />
+        </property>
+        <property name="hwState" type="string">
+            <column name="HW_STATE" length="2" />
+        </property>
+        <property name="hwCountry" type="string">
+            <column name="HW_COUNTRY" length="13" />
+        </property>
+        <property name="hwCountryArea" type="string">
+            <column name="HW_COUNTRY_AREA" length="26" />
+        </property>
+        <property name="hwGem" type="string">
+            <column name="HW_GEM" length="13" />
+        </property>
+        <property name="hwPostalCode" type="java.lang.Integer">
+            <column name="HW_POSTAL_CODE" precision="5" scale="0" />
+        </property>
+        <property name="hwRegion" type="string">
+            <column name="HW_REGION" length="5" />
+        </property>
+        <property name="productGlId" type="string">
+            <column name="PRODUCT_GL_ID" />
+        </property>
+        <property name="glidGroup" type="string">
+            <column name="GLID_GROUP" />
+        </property>
+        <property name="productType" type="string">
+            <column name="PRODUCT_TYPE" />
+        </property>
+        <property name="pla" type="string">
+            <column name="PLA" />
+        </property>
+        <property name="pla2" type="string">
+            <column name="PLA_2" />
+        </property>
+        <property name="productLevel4" type="string">
+            <column name="PRODUCT_LEVEL_4" length="63" />
+        </property>
+        <property name="partNum" type="string">
+            <column name="PART_NUM" />
+        </property>
+        <property name="productLevel5" type="string">
+            <column name="PRODUCT_LEVEL_5" length="18" />
+        </property>
+        <property name="productLevel6" type="string">
+            <column name="PRODUCT_LEVEL_6" length="18" />
+        </property>
+        <property name="partyNum" type="string">
+            <column name="PARTY_NUM" />
+        </property>
+        <property name="parentInstanceNum" type="java.lang.Integer">
+            <column name="PARENT_INSTANCE_NUM" precision="9" scale="0" />
+        </property>
+        <property name="partyName" type="string">
+            <column name="PARTY_NAME" />
+        </property>
+        <property name="newAssetFlag" type="string">
+            <column name="NEW_ASSET_FLAG" />
+        </property>
+        <property name="parentSerialNum" type="string">
+            <column name="PARENT_SERIAL_NUM" length="10" />
+        </property>
+        <property name="numOfAssets" type="string">
+            <column name="NUM_OF_ASSETS" length="16" />
+        </property>
+        <property name="activeAssetCount" type="java.lang.Boolean">
+            <column name="ACTIVE_ASSET_COUNT" precision="1" scale="0" />
+        </property>
+        <property name="nonActiveAssetCount" type="java.lang.Boolean">
+            <column name="NON_ACTIVE_ASSET_COUNT" precision="1" scale="0" />
+        </property>
+        <property name="idNum" type="string">
+            <column name="ID_NUM" length="26" />
+        </property>
+        <property name="platinumEnabled" type="string">
+            <column name="PLATINUM_ENABLED" length="3" />
+        </property>
+        <property name="hasSrInPrevious3Months" type="string">
+            <column name="HAS_SR_IN_PREVIOUS_3_MONTHS" length="3" />
+        </property>
+        <property name="assetsWithSrInPrevious3" type="java.lang.Short">
+            <column name="ASSETS_WITH_SR_IN_PREVIOUS_3" precision="3" scale="0" />
+        </property>
+        <property name="totalSrsSubmit" type="java.lang.Boolean">
+            <column name="TOTAL_SRS_SUBMIT" precision="1" scale="0" />
+        </property>
+        <property name="asrSrsSubmit" type="java.lang.Boolean">
+            <column name="ASR_SRS_SUBMIT" precision="1" scale="0" />
+        </property>
+        <property name="nonAsrSrsSubmit" type="java.lang.Short">
+            <column name="NON_ASR_SRS_SUBMIT" precision="3" scale="0" />
+        </property>
+        <property name="willNotConnectFlag" type="string">
+            <column name="WILL_NOT_CONNECT_FLAG" length="3" />
+        </property>
+        <property name="willNotConnectReason" type="string">
+            <column name="WILL_NOT_CONNECT_REASON" length="6" />
+        </property>
+        <property name="willNotConnectComment" type="string">
+            <column name="WILL_NOT_CONNECT_COMMENT" />
+        </property>
+        <property name="wncNextContactDate" type="string">
+            <column name="WNC_NEXT_CONTACT_DATE" />
+        </property>
+        <property name="executive" type="string">
+            <column name="EXECUTIVE" length="7" />
+        </property>
+        <property name="entity" type="string">
+            <column name="ENTITY" length="13" />
+        </property>
+        <property name="submitDate" type="string">
+            <column name="SUBMIT_DATE" />
+        </property>
+        <property name="tamEntity" type="string">
+            <column name="TAM_ENTITY" length="13" />
+        </property>
+        <property name="tamManager" type="string">
+            <column name="TAM_MANAGER" length="13" />
+        </property>
+        <property name="shortName" type="string">
+            <column name="SHORT_NAME" length="15" />
+        </property>
+        <property name="fieldManager" type="string">
+            <column name="FIELD_MANAGER" length="12" />
+        </property>
+    </class>
+</hibernate-mapping>
